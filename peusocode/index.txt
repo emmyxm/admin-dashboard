@@ -1,0 +1,21 @@
+we have to work with the layout which is a grid of 2x2
+then we have to work on the dashboard menu first before the actual dashboard
+we have to work on the top part of the dashboard 
+before the card section which consists of two parts
+
+the structure
+
+header
+dashboard-menu
+div
+ img
+ h2
+ div/
+ h4
+ h4
+ h4
+ h4
+ h4
+ h4
+ h4
+ 
