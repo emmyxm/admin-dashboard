@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 1px solid red;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 4fr;
+  grid-template-areas:
+    "aside header header"
+    "aside main main"
+    "aside main main";
+  min-height: 100vh;
+  gap: 2px;
+}
+
+/* Layout  */
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(94, 94, 235);
+  grid-area: aside;
+}
+
+.header {
+  background: green;
+  grid-area: header;
+}
+
+.main {
+  background: red;
+  grid-area: main;
+}
+
+/* Content Layout And Postioning */
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  bottom: 4.6rem;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  align-self: center;
+  position: relative;
+  right: 2.4rem;
+  bottom: 3.5rem;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  right: 2.4rem;
+  bottom: 3.5rem;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  right: 2.4rem;
+  bottom: 3.5rem;
+}
+
+.history {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  right: 2.4rem;
+  bottom: 3.5rem;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  right: 2.4rem;
+  bottom: 3.5rem;
+}
+
+.community {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.setting {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.support {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.privacy {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
