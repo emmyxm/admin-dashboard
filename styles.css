@@ -1,8 +1,9 @@
+/* Layout */
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  outline: 1px solid red;
 }
 
 .dashboard {
@@ -17,15 +18,14 @@
   gap: 2px;
 }
 
-/* Layout  */
-
 .sidebar {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   background: rgb(94, 94, 235);
   grid-area: aside;
+  padding: 2rem;
 }
 
 .header {
@@ -38,82 +38,45 @@
   grid-area: main;
 }
 
-/* Content Layout And Postioning */
+/* Sidebar Content Layout And Postioning */
+
+.top-section,
+.bottom-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.top-section > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bottom-section > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.top-section {
+  margin-bottom: auto;
+}
+
+.bottom-section {
+  margin-top: 2rem;
+}
 
 .menu {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  position: relative;
-  bottom: 4.6rem;
+  padding-bottom: 1.2rem;
 }
 
-.home {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  align-self: center;
-  position: relative;
-  right: 2.4rem;
-  bottom: 3.5rem;
+.menu > img {
+  width: 48px;
+  height: 48px;
 }
 
-.profile {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  position: relative;
-  right: 2.4rem;
-  bottom: 3.5rem;
-}
-
-.message {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  position: relative;
-  right: 2.4rem;
-  bottom: 3.5rem;
-}
-
-.history {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  position: relative;
-  right: 2.4rem;
-  bottom: 3.5rem;
-}
-
-.task {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  position: relative;
-  right: 2.4rem;
-  bottom: 3.5rem;
-}
-
-.community {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.setting {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.support {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.privacy {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.sidebar > img {
+  width: 24px;
+  height: 24px;
 }
