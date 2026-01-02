@@ -29,8 +29,14 @@
 }
 
 .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
   background: green;
   grid-area: header;
+  padding-left: 0.5rem;
+  padding-bottom: 0.2rem;
 }
 
 .main {
@@ -38,7 +44,7 @@
   grid-area: main;
 }
 
-/* Sidebar Content Layout And Postioning */
+/* Sidebar Content Layout Postioning and styling*/
 
 .top-section,
 .bottom-section {
@@ -79,4 +85,24 @@
 .sidebar > img {
   width: 24px;
   height: 24px;
+}
+
+/* Header Content Layout Postioning and styling */
+
+.first-part {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.searchbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(autofit, 1fr);
+  gap: 5px;
+}
+
+input {
+  border-radius: 1rem;
 }
