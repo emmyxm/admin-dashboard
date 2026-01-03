@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  /* outline: auto; */
 }
 
 .dashboard {
@@ -23,9 +24,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background: rgb(94, 94, 235);
+  background: rgb(108, 108, 253);
   grid-area: aside;
-  padding: 2rem;
+  padding-top: 8px;
+  padding-left: 1rem;
 }
 
 .header {
@@ -33,13 +35,15 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
-  background: green;
+  background: white;
   grid-area: header;
   padding-left: 0.5rem;
-  padding-bottom: 0.2rem;
 }
 
 .main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-rows: repeat(3, 1fr);
   background: red;
   grid-area: main;
 }
@@ -97,12 +101,54 @@
 }
 
 .searchbar {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(autofit, 1fr);
+  display: flex;
   gap: 5px;
 }
 
 input {
+  padding-left: 30px;
+  width: 600px;
   border-radius: 1rem;
+  background: rgb(226, 224, 224);
+  border: none;
 }
+
+.notification {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-left: 150px;
+}
+
+.second-part {
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.buttons {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  gap: 10px;
+  padding-left: 600px;
+}
+
+button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 18px;
+  padding-right: 18px;
+  border-radius: 18px;
+  border: none;
+  background: rgb(108, 108, 253);
+  color: white;
+}
+
+.account {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Main Content Layout Postioning and styling */
